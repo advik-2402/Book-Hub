@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+<link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="donate.css">
+
+<div class="container mt-4">
+    <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i>DONATE<span class="text-primary">BOOKS</span>
+    </h1>
+
+    <a href="/buttonForm/buttonForm.html">
+        <h3>Go Back</h3>
+    </a>
+
+    <h3 class="container mt-5">Books Uploaded by You</h3>
+
+    <table class="table table-striped mt-4">
+        <tr class="bg-info">
+            <th data-colname="name" data-order="desc">Book Name</th>
+            <th data-colname="owner" data-order="desc">Book Owner</th>
+            <th data-colname="author" data-order="desc">Author</th>
+            <th data-colname="type" data-order="desc">Type</th>
+            <th data-colname="isbn" data-order="desc">ISBN</th>
+            <th data-colname="availability" data-order="desc">Availability</th>
+            <th data-colname="date" data-order="desc">Date</th>
+            <th data-colname="checkBox" data-order="desc"></th>
+        </tr>
+        <tbody id="myTable">
+        </tbody>
+    </table>
+</div>
+
+<script>
+    /* var myArray = [
+          { 'name': 'Book 1', 'owner': 'Advik', 'author': 'John Doe', 'type': 'Horror', 'availability': 'Available', 'date': '', 'bookNow': '<button>Book Now</button>' },
+          { 'name': 'Book 2', 'owner': 'Akshita', 'author': 'Jane Doe', 'type': 'Biography', 'availability': 'Donated', 'date': '20/06/2020', 'bookNow': '' },
+          { 'name': 'Book 3', 'owner': 'Prachi', 'author': 'Elon Musk', 'type': 'Thriller', 'availability': 'Booked', 'date': '14/06/2020', 'bookNow': '' },
+          { 'name': 'Book 4', 'owner': 'Neeraj', 'author': 'J.K Rowling', 'type': 'Comedy', 'availability': 'Donated', 'date': '20/06/2020', 'bookNow': '' },
+     ]
+
+    $('#filterInput').on('keyup', function () {
+        var value = $(this).val();
+        console.log('Value:', value);
+
+        var data = searchTable(value, myArray);
+        buildTable(data)
+    })
+
+
+    buildTable(myArray)
+
+
+    function searchTable(value, data) {
+        var filteredData = [];
+
+        for (var i = 0; i < data.length; i++) {
+            value = value.toLowerCase();
+            var availability = data[i].availability.toLowerCase();
+            var name = data[i].name.toLowerCase();
+            var type = data[i].type.toLowerCase();
+            var author = data[i].author.toLowerCase();
+
+            if (name.includes(value) || availability.includes(value) || type.includes(value) || author.includes(value)) {
+                filteredData.push(data[i]);
+            }
+        }
+        return filteredData;
+    }
+
+    function buildTable(data) {
+        var table = document.getElementById('myTable')
+        table.innerHTML = ''
+        for (var i = 0; i < data.length; i++) {
+            var colname = `name-${i}`
+            var colauthor = `author-${i}`
+            var coltype = `type-${i}`
+            var colavailable = `availability-${i}`*/
+
+           // var row = `<tr>
+                        //<td>${data[i].name}</td>
+                    //    <td>${data[i].owner}</td>
+                 //       <td>${data[i].author}</td>
+                //        <td>${data[i].type}</td>
+              //          <td>${data[i].isbn}</td>
+            //            <td>${data[i].availability}</td>
+           //             <td>${data[i].date}</td>
+          //              <td><button>Donate</button></td>
+         //               </tr >`
+       //     table.innerHTML += row
+     //   }
+   // }
+
+</script>
+
+<script src="donate.js"></script>

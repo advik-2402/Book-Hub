@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="hello">
+        <div class="form-box">
+            <div class="button_box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="alert">You have been registered!</div>
+            <form id="login" class="input-group1">
+                <input type="email" , class="input-field" , placeholder="Email ID" , id="email" required>
+                <input type="password" , class="input-field" , placeholder="Password" , id="password" required>
+                <input type="checkbox" , class="check-box"><span>Remember Password</span>
+                <a href="/buttonForm/buttonForm.html">
+                    <button type="button" , class="submit-btn">Log In</button>
+                </a>
+            </form>
+
+            <form id="register" class="input-group2">
+                <input type="text" , class="input-field" , placeholder="Name" , id="name" required>
+                <input type="number" , class="input-field" , placeholder="Contact No." , id="phone" required>
+                <input type="text" , class="input-field" , placeholder="Address" , id="address" required>
+                <input type="email" , class="input-field" , placeholder="Email ID" ,id="email" required>
+                <input type="password" , class="input-field" , placeholder="Password" ,id="password" required>
+                <input type="checkbox" , class="check-box"><span>I agree to the Terms & Conditions</span>
+                <a href="/buttonForm/buttonForm.html">
+                    <button type="button" , class="submit-btn">Register</button>
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
